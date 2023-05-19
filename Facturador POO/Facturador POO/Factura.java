@@ -24,6 +24,24 @@ public class Factura {
     }
 
     public String getNombresVendedor() {
-        return this.cliente.nombres;
+        return this.vendedor.nombres;
     }
+
+    public void verProductos(ItemFactura[] arrayItems ) {
+        for(int i = 0; i < arrayItems.length; i++) {
+            if (arrayItems[i] != null) {
+                System.out.println("Id producto: " + arrayItems[i].producto.id);
+                System.out.println("Nombre: " + arrayItems[i].producto.nombre);
+                System.out.println("Precio und: " + arrayItems[i].producto.precio);
+                System.out.println("Cantidad: " + arrayItems[i].cantidad);
+                System.out.println("Subtotal: " + arrayItems[i].subtotal);
+            }
+            
+        }
+    }
+
+    
+
+
+
 }

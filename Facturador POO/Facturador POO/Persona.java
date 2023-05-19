@@ -9,16 +9,22 @@ public class Persona {
         this.apellidos = apellidos;
     }
 
+    public int getCedula() {
+	    return this.cedula;
+	}
+
     public String getNombres(){
         return this.nombres;
-    }
-
-    public int getCedula(){
-        return this.cedula;
     }
 
     public String getApellidos(){
         return this.apellidos;
     }
-    
+
 }
+
+
+
+
+
+
