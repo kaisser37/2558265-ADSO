@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        int opcionMenu = 0
+        int opcionMenu = 0¿
+		
         System.out.println("\n");
 		System.out.println("  +--------------------------------+");
 		System.out.println("  |        Menú principal          |");
