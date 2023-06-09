@@ -15,7 +15,7 @@ public class Main{
 		Vendedores[1] = new Persona("109901", "Fernando Vergara", "Calle 19");
 		Vendedores[2] = new Persona("109902", "Alejandro Velez", "Calle 18");
 		Vendedores[3] = new Persona("109903", "Angelica Osorio", "Calle 17");
-		Vendedores[4] = new Persona("109904", "Andres Vigo", "Calle 16");
+		Vendedores[4] = new Persona("109904", "Leidy Perez", "Calle 16");
 
 		Productos[0] = new Producto(100, "Leche", 3800);
 		Productos[1] = new Producto(101, "Lomo Redondo 350gr", 30000);

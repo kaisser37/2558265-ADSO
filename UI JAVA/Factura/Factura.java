@@ -46,13 +46,13 @@ public class Factura extends JFrame{
 
 	public void initComponent(){
 
-		Toolkit sistema = Toolkit.getDefaultToolkit();
-		Dimension tamanio = sistema.getScreenSize();
-
 		setTitle("FACTURA");
-		setSize( ((int) (tamanio.width*0.4)) , ((int) (tamanio.height*0.9)) );
+		setSize( 400, 600 );
 		setDefaultCloseOperation( EXIT_ON_CLOSE );
 		setLocationRelativeTo(null);
+
+		Image icono = getToolkit().createImage( ClassLoader.getSystemResource("imagenes/icono_factura.png") );
+setIconImage(icono);
 		
 		JPanel contPrincipal = new JPanel();
 		contPrincipal.setLayout(new GridBagLayout());
