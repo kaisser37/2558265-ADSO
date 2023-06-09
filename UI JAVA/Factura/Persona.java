@@ -11,15 +11,15 @@ public class Persona{
 	}
 
 	public String getCedula(){
-		return this.cedula;
+		return cedula;
 	}
 
 	public String getNombres(){
-		return this.nombres;
+		return nombres;
 	}
 
 	public String getDireccion(){
-		return this.direccion;
+		return direccion;
 	}
 
 }
