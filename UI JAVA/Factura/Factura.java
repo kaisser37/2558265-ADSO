@@ -382,13 +382,13 @@ setIconImage(icono);
 		revalidate();
 		repaint();
 
-		ActionListener eventoClickBuscarCliente = new ActionListener(){
+		ActionListener eventoclickCliente = new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				buscarCliente();
 			}
 		};
 
-		KeyListener eventoKeyBuscarCliente = new KeyListener(){
+		KeyListener eventokeyCliente = new KeyListener(){
             public void keyPressed(KeyEvent e){
             }
 
@@ -412,13 +412,13 @@ setIconImage(icono);
             }
         };
 
-        ActionListener eventoClickBuscarVendedor = new ActionListener(){
+        ActionListener eventoclickVendedor = new ActionListener(){
 			public void actionPerformed(ActionEvent e){
 				buscarVendedor();
 			}
 		};
 
-		KeyListener eventoKeyBuscarVendedor = new KeyListener(){
+		KeyListener eventokeyVendedor = new KeyListener(){
             public void keyPressed(KeyEvent e){
             }
 
@@ -446,14 +446,14 @@ setIconImage(icono);
             }
         };
 
-		btbuscarCliente.addActionListener( eventoClickBuscarCliente );
-		inputcedulaCliente.addKeyListener( eventoKeyBuscarCliente );
+		btbuscarCliente.addActionListener( eventoclickCliente );
+		inputcedulaCliente.addKeyListener( eventokeyCliente );
 
-		btbuscarVendedor.addActionListener( eventoClickBuscarVendedor );
-		inputcedulaVendedor.addKeyListener( eventoKeyBuscarVendedor );
+		btbuscarVendedor.addActionListener( eventoclickVendedor );
+		inputcedulaVendedor.addKeyListener( eventokeyVendedor );
 
 
-		KeyListener eventoKeyBuscarProducto = new KeyListener(){
+		KeyListener eventokeyProducto = new KeyListener(){
             public void keyPressed(KeyEvent e){
             }
 
@@ -481,21 +481,7 @@ setIconImage(icono);
             public void keyTyped(KeyEvent e){
             }
         };
-        inputidProducto.addKeyListener(eventoKeyBuscarProducto);
-	}
-
-	public boolean validarNumero(String texto){
-		int count = 0;
-		for (int i=0; i<texto.length(); i++) {
-			int codigo = (int) texto.charAt(i);
-			if ((codigo<48 || codigo>57) && codigo!=44 && codigo!=45 && codigo!=46){
-				return false;
-			}
-			if (codigo==44 || codigo==46){
-				count++;
-			}
-		}
-		return (count<=1);
+        inputidProducto.addKeyListener(eventokeyProducto);
 	}
 
 	public String formatoMoneda(String texto){
@@ -582,7 +568,7 @@ setIconImage(icono);
 	public void deshabilitarInput(JTextField input){
 		input.setEditable(false);
 		input.setEnabled(false);
-		input.setDisabledTextColor(Color.black);
+		input.setDisabledTextColor(Color.red);
 	}
 
 	public void habilitarInput(JTextField input){
