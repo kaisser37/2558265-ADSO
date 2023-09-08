@@ -51,7 +51,7 @@ window.onload = function () {
         keyboard: false,
     })
 
-    getClients("http://localhost/APIenPHP/Obtener.php");
+    getClients("http://localhost/APIenPHP/personas/Obtener.php");
 }
 
 function getClients(endpoint) {
@@ -73,6 +73,7 @@ function getClients(endpoint) {
                     <td>${data.registros[i].telefono}</td>
                     <td>${data.registros[i].direccion}</td>
                     <td>${data.registros[i].email}</td>
+                    <td>${data.registros[i].rol}</td>
                     <td>
                         <button class="btn btn-primary" onclick="abrirModalEditar( ${i} )">Editar</button>
                     </td>
@@ -97,6 +98,7 @@ function abrirModalEditar(indice) {
     document.getElementById("campo_editar_telefono").value = listaPersonas[indice].telefono;
     document.getElementById("campo_editar_direccion").value = listaPersonas[indice].direccion;
     document.getElementById("campo_editar_email").value = listaPersonas[indice].email;
+    document.getElementById("campo_editar_rol").value = listaPersonas[indice].rol;
     modalEditarUsuario.show();
 }
 
@@ -110,7 +112,7 @@ function editarPersona(){
         body: datos,
     };
     waitContentCreate.style.display = "block";
-    fetch("http://localhost/APIenPHP/Editar.php", configuracion)
+    fetch("http://localhost/APIenPHP/personas/Editar.php", configuracion)
     .then(res => res.json())
     .then(data => {
         console.log("Se recibe del endpoint Insert");
@@ -119,7 +121,7 @@ function editarPersona(){
         if (data.status) {
 
             modalEditarUsuario.hide();
-            getClients("http://localhost/APIenPHP/Obtener.php");
+            getClients("http://localhost/APIenPHP/personas/Obtener.php");
             Swal.fire({
                 title: '<strong><u>EXITO</u></strong>',
                 icon: 'success',
@@ -157,7 +159,7 @@ function eliminarPersona(){
         body: datos,
     };
     waitContentCreate.style.display = "block";
-    fetch("http://localhost/APIenPHP/Eliminar.php", configuracion)
+    fetch("http://localhost/APIenPHP/personas/Eliminar.php", configuracion)
         .then(res => res.json())
         .then(data => {
             console.log("Se recibe del endpoint Eliminar");
@@ -166,7 +168,7 @@ function eliminarPersona(){
             if (data.status) {
 
                 modalEliminarUsuario.hide();
-                getClients("http://localhost/APIenPHP/Obtener.php");
+                getClients("http://localhost/APIenPHP/personas/Obtener.php");
                 Swal.fire({
                     title: '<strong><u>EXITO</u></strong>',
                     icon: 'success',
@@ -196,7 +198,7 @@ function crearPersona() {
         body: datos,
     };
     waitContentCreate.style.display = "block";
-    fetch("http://localhost/APIenPHP/Insert.php", configuracion)
+    fetch("http://localhost/APIenPHP/personas/Insert.php", configuracion)
         .then(res => res.json())
         .then(data => {
             console.log("Se recibe del endpoint Insert");
@@ -206,7 +208,7 @@ function crearPersona() {
 
                 formInsertarUsuario.reset();  //Limpiando el formulario.
                 modalCrearUsuario.hide();
-                getClients("http://localhost/APIenPHP/Obtener.php");
+                getClients("http://localhost/APIenPHP/personas/Obtener.php");
                 Swal.fire({
                     title: '<strong><u>EXITO</u></strong>',
                     icon: 'success',

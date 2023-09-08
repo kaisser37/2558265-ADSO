@@ -16,7 +16,7 @@
         $rol = $_POST['rol'];
 
         try{
-            $consulta = $base_de_datos->prepare("INSERT INTO personas (cedula, nombres, apellidos, telefono, direccion, email) VALUES(:doc, :nom, :ape, :tel, :dir, :ema, :rol) ");
+            $consulta = $base_de_datos->prepare("INSERT INTO personas (cedula, nombres, apellidos, telefono, direccion, email, rol) VALUES(:doc, :nom, :ape, :tel, :dir, :ema, :rol) ");
 
             $consulta->bindParam(':doc', $documento);
             $consulta->bindParam(':nom', $nombres);
@@ -53,7 +53,7 @@
         $respuesta = [
                         'status' => false,
                         'mesagge' => "ERROR##DATOS##POST"
-                      ];
+                    ];
         echo json_encode($respuesta);
     }
 ?>
