@@ -20,13 +20,13 @@
                 $respuesta = [
                                 'status' => true,
                                 'mesagge' => "OK##CLIENT##DELETE"
-                            ];
+                              ];
                 echo json_encode($respuesta);
             }else{
                 $respuesta = [
                                 'status' => false,
                                 'mesagge' => "ERROR##CLIENT##DELETE"
-                            ];
+                              ];
                 echo json_encode($respuesta);
             }
         } catch (Exception $e) {
@@ -34,7 +34,7 @@
                             'status' => false,
                             'mesagge' => "ERROR##SQL",
                             'exception' => $e
-                        ];
+                          ];
             echo json_encode($respuesta);
         }
     }else{
