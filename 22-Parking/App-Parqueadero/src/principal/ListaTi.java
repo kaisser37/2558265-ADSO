@@ -66,7 +66,6 @@ public final class ListaTi extends javax.swing.JPanel {
         etq_titulo.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
         etq_titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etq_titulo.setText("Registros");
-        etq_titulo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 3, 0, new java.awt.Color(255, 0, 0)));
 
         Tickets.setAutoCreateRowSorter(true);
         Tickets.setModel(new javax.swing.table.DefaultTableModel(
@@ -127,10 +126,10 @@ public final class ListaTi extends javax.swing.JPanel {
             }
         });
 
-        btn_restablecer.setBackground(new java.awt.Color(255, 102, 102));
-        btn_restablecer.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btn_restablecer.setBackground(new java.awt.Color(102, 204, 255));
+        btn_restablecer.setFont(new java.awt.Font("Agency FB", 1, 14)); // NOI18N
         btn_restablecer.setForeground(new java.awt.Color(255, 255, 255));
-        btn_restablecer.setText("X");
+        btn_restablecer.setText("LIMPIAR");
         btn_restablecer.setBorder(null);
         btn_restablecer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_restablecer.setFocusable(false);
@@ -188,7 +187,7 @@ public final class ListaTi extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(103, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

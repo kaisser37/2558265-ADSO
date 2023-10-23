@@ -77,7 +77,7 @@ public class PSalida extends javax.swing.JPanel {
 
         campo_placa.setFont(new java.awt.Font("Agency FB", 0, 18)); // NOI18N
         campo_placa.setForeground(new java.awt.Color(255, 0, 0));
-        campo_placa.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        campo_placa.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
         campo_placa.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 campo_placaKeyPressed(evt);
@@ -103,21 +103,21 @@ public class PSalida extends javax.swing.JPanel {
         etq_placa2.setForeground(new java.awt.Color(255, 0, 51));
         etq_placa2.setText("Entrada:");
 
-        salida.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        salida.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
 
-        entrada.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        entrada.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
 
         etq_placa3.setFont(new java.awt.Font("Agency FB", 1, 24)); // NOI18N
         etq_placa3.setForeground(new java.awt.Color(255, 0, 51));
         etq_placa3.setText("Salida:");
 
-        estacionado.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        estacionado.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
 
         etq_placa4.setFont(new java.awt.Font("Agency FB", 1, 24)); // NOI18N
         etq_placa4.setForeground(new java.awt.Color(255, 0, 51));
         etq_placa4.setText("Total a pagar:");
 
-        costo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        costo.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
 
         btn_buscar1.setBackground(new java.awt.Color(153, 255, 153));
         btn_buscar1.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
@@ -134,7 +134,7 @@ public class PSalida extends javax.swing.JPanel {
         etq_placa5.setForeground(new java.awt.Color(255, 0, 51));
         etq_placa5.setText("Ingresar Pago");
 
-        campo_dinero.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        campo_dinero.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 0)));
         campo_dinero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 campo_dineroActionPerformed(evt);
@@ -153,11 +153,11 @@ public class PSalida extends javax.swing.JPanel {
         etq_placa6.setForeground(new java.awt.Color(255, 0, 51));
         etq_placa6.setText("Factura:");
 
-        cambio.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        cambio.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
 
-        recibido.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        recibido.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
 
-        valor.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
+        valor.setFont(new java.awt.Font("Agency FB", 1, 18)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -173,23 +173,15 @@ public class PSalida extends javax.swing.JPanel {
                                 .addComponent(campo_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(btn_buscar, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(estacionado, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(costo, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(campo_dinero, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(etq_placa2)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(etq_placa4)
-                                .addGap(67, 67, 67)
-                                .addComponent(etq_placa5))
                             .addComponent(etq_placa1)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(valor, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(entrada, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(estacionado, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(entrada, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                             .addComponent(etq_placa3)
                                             .addGap(223, 223, 223)
@@ -197,8 +189,17 @@ public class PSalida extends javax.swing.JPanel {
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                             .addComponent(salida, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGap(55, 55, 55)
-                                            .addComponent(recibido, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                .addComponent(cambio, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                            .addComponent(recibido, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(valor, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cambio, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(costo, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(etq_placa4))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(etq_placa5)
+                                    .addComponent(campo_dinero, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(280, 280, 280)
                         .addComponent(btn_buscar1, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -222,14 +223,14 @@ public class PSalida extends javax.swing.JPanel {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(entrada, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(salida, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(salida, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(entrada, javax.swing.GroupLayout.DEFAULT_SIZE, 18, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(etq_placa1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(estacionado, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(etq_placa5)
                             .addComponent(etq_placa4))
@@ -263,40 +264,40 @@ public class PSalida extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void campo_placaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_placaKeyPressed
-        if (evt.getKeyChar() == '\n') {
-            bucar();
-            
-        }
-    }//GEN-LAST:event_campo_placaKeyPressed
-
-    private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
-
-        bucar();
-        
-    }//GEN-LAST:event_btn_buscarActionPerformed
-
-    private void btn_buscar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscar1ActionPerformed
-        
-        facturar();
-        
-    }//GEN-LAST:event_btn_buscar1ActionPerformed
-
-    private void campo_dineroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_dineroActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_campo_dineroActionPerformed
-
     private void campo_dineroKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_dineroKeyReleased
-        
+
     }//GEN-LAST:event_campo_dineroKeyReleased
 
     private void campo_dineroKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_dineroKeyPressed
         if (evt.getKeyChar() == '\n') {
             facturar();
-            
+
         }
-        
+
     }//GEN-LAST:event_campo_dineroKeyPressed
+
+    private void campo_dineroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_campo_dineroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_campo_dineroActionPerformed
+
+    private void btn_buscar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscar1ActionPerformed
+
+        facturar();
+
+    }//GEN-LAST:event_btn_buscar1ActionPerformed
+
+    private void btn_buscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_buscarActionPerformed
+
+        bucar();
+
+    }//GEN-LAST:event_btn_buscarActionPerformed
+
+    private void campo_placaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_campo_placaKeyPressed
+        if (evt.getKeyChar() == '\n') {
+            bucar();
+
+        }
+    }//GEN-LAST:event_campo_placaKeyPressed
     public void facturar(){
         String dinero  = campo_dinero.getText();
         int dineroNumero = Integer.parseInt(dinero);

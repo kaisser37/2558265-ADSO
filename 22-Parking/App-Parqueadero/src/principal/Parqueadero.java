@@ -30,7 +30,6 @@ public class Parqueadero extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         etq_cerrar_sesion = new javax.swing.JLabel();
-        etq_inicio = new javax.swing.JLabel();
         panel_botones = new javax.swing.JPanel();
         btnBuscarVehiculo = new javax.swing.JButton();
         btnCosto = new javax.swing.JButton();
@@ -48,7 +47,7 @@ public class Parqueadero extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(1000, 50));
 
-        etq_cerrar_sesion.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        etq_cerrar_sesion.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         etq_cerrar_sesion.setForeground(new java.awt.Color(255, 255, 255));
         etq_cerrar_sesion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etq_cerrar_sesion.setText("CERRRAR SESION");
@@ -57,19 +56,6 @@ public class Parqueadero extends javax.swing.JFrame {
         etq_cerrar_sesion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 etq_cerrar_sesionMousePressed(evt);
-            }
-        });
-
-        etq_inicio.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        etq_inicio.setForeground(new java.awt.Color(255, 255, 255));
-        etq_inicio.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        etq_inicio.setText("INICIO");
-        etq_inicio.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 1, new java.awt.Color(0, 0, 0)));
-        etq_inicio.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        etq_inicio.setPreferredSize(new java.awt.Dimension(158, 50));
-        etq_inicio.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                etq_inicioMousePressed(evt);
             }
         });
 
@@ -191,22 +177,20 @@ public class Parqueadero extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(panel_botones, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(71, 71, 71)
-                .addComponent(etq_inicio, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(etq_cerrar_sesion, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(51, 51, 51))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(panel_botones, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(etq_cerrar_sesion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(etq_inicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addComponent(panel_botones, javax.swing.GroupLayout.DEFAULT_SIZE, 58, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(14, Short.MAX_VALUE)
+                .addComponent(etq_cerrar_sesion, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(14, 14, 14))
         );
 
         javax.swing.GroupLayout panel_contenidoLayout = new javax.swing.GroupLayout(panel_contenido);
@@ -228,7 +212,7 @@ public class Parqueadero extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                 .addGap(53, 53, 53)
                 .addComponent(panel_contenido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,20 +242,6 @@ public class Parqueadero extends javax.swing.JFrame {
     private void etq_cerrar_sesionMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_etq_cerrar_sesionMousePressed
         cerrarSesion();
     }//GEN-LAST:event_etq_cerrar_sesionMousePressed
-
-    private void etq_inicioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_etq_inicioMousePressed
-       panel_contenido.removeAll();
-
-        String id_parqueadero = datosParqueadero.getAsJsonObject("registros").get("id_parqueadero").getAsString();
-        JsonObject datosActuales = getParkin(id_parqueadero);
-        InfoParqueadero infoParking = new InfoParqueadero(datosActuales);
-        infoParking.setSize(panel_contenido.getSize());
-        panel_contenido.add(infoParking);
-        repaint();
-        revalidate();
-        
-                
-    }//GEN-LAST:event_etq_inicioMousePressed
 
     private void btnBuscarVehiculoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarVehiculoActionPerformed
         panel_contenido.removeAll();
@@ -462,7 +432,6 @@ public class Parqueadero extends javax.swing.JFrame {
     public javax.swing.JButton btnTickets;
     public javax.swing.JButton definirTarifas;
     private javax.swing.JLabel etq_cerrar_sesion;
-    private javax.swing.JLabel etq_inicio;
     public javax.swing.JButton infoParq;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
@@ -472,7 +441,6 @@ public class Parqueadero extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     private void cerrarSesion() {
-        System.out.println("Cerrando sesión");
         Login ventanaLogin = new Login();
         dispose();
     }

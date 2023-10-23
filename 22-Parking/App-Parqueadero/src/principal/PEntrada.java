@@ -26,8 +26,9 @@ public class PEntrada extends javax.swing.JPanel {
         initComponents();
         this.id_p = id_parqueadero;
         this.insert = false;
-        this.panelBtn1 = new JPanel();
         this.panelBtn2 = new JPanel();
+        this.panelBtn1 = new JPanel();
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -53,7 +54,6 @@ public class PEntrada extends javax.swing.JPanel {
         etq_titulo.setFont(new java.awt.Font("Agency FB", 0, 36)); // NOI18N
         etq_titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         etq_titulo.setText("ENTRADA");
-        etq_titulo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 3, 0, new java.awt.Color(255, 0, 0)));
 
         campo_placa.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         campo_placa.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 0)));
@@ -82,19 +82,19 @@ public class PEntrada extends javax.swing.JPanel {
 
         etq_titulo_ticket.setFont(new java.awt.Font("Roboto", 1, 22)); // NOI18N
         etq_titulo_ticket.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        etq_titulo_ticket.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 51)));
+        etq_titulo_ticket.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 51)));
 
         etq_placa_carro.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         etq_placa_carro.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        etq_placa_carro.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 51)));
+        etq_placa_carro.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 51)));
 
         etq_hora_ingreso.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         etq_hora_ingreso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        etq_hora_ingreso.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 51)));
+        etq_hora_ingreso.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 51)));
 
         etq_propietario.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         etq_propietario.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        etq_propietario.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(255, 0, 51)));
+        etq_propietario.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(255, 0, 51)));
 
         panel_botones.setBackground(new java.awt.Color(255, 255, 255));
         panel_botones.setLayout(new javax.swing.BoxLayout(panel_botones, javax.swing.BoxLayout.X_AXIS));
@@ -103,30 +103,29 @@ public class PEntrada extends javax.swing.JPanel {
         panel_content.setLayout(panel_contentLayout);
         panel_contentLayout.setHorizontalGroup(
             panel_contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel_contentLayout.createSequentialGroup()
-                .addGap(350, 350, 350)
-                .addComponent(etq_titulo)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_contentLayout.createSequentialGroup()
-                .addGroup(panel_contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panel_contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(etq_titulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(panel_contentLayout.createSequentialGroup()
-                        .addGap(40, 40, 40)
                         .addGroup(panel_contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(panel_contentLayout.createSequentialGroup()
-                                .addGap(105, 105, 105)
-                                .addComponent(etq_placa))
-                            .addComponent(campo_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_contentLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_buscar_placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(122, 122, 122)))
-                .addGroup(panel_contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(etq_propietario, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
-                    .addComponent(etq_hora_ingreso, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
-                    .addComponent(etq_titulo_ticket, javax.swing.GroupLayout.DEFAULT_SIZE, 435, Short.MAX_VALUE)
-                    .addComponent(etq_placa_carro, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE)
-                    .addComponent(panel_botones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addGap(40, 40, 40)
+                                .addGroup(panel_contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(panel_contentLayout.createSequentialGroup()
+                                        .addGap(105, 105, 105)
+                                        .addComponent(etq_placa))
+                                    .addComponent(campo_placa, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_contentLayout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btn_buscar_placa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(122, 122, 122)))
+                        .addGroup(panel_contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(etq_propietario, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
+                            .addComponent(etq_hora_ingreso, javax.swing.GroupLayout.DEFAULT_SIZE, 268, Short.MAX_VALUE)
+                            .addComponent(etq_titulo_ticket, javax.swing.GroupLayout.DEFAULT_SIZE, 435, Short.MAX_VALUE)
+                            .addComponent(etq_placa_carro, javax.swing.GroupLayout.DEFAULT_SIZE, 296, Short.MAX_VALUE)
+                            .addComponent(panel_botones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addGap(40, 40, 40))
         );
 
@@ -164,7 +163,7 @@ public class PEntrada extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(panel_content, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(94, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -220,22 +219,15 @@ public class PEntrada extends javax.swing.JPanel {
                     etq_propietario.setText(propietario);
                     etq_placa_carro.setText(placa);
 
-                    //---------Panel1--------------------
+                    
                     panelBtn1.setBackground(Color.white);
-                    btnConfirmar = new JButton("CONFIRMAR");
-                    btnConfirmar.setBackground(Color.green);
+                    btnConfirmar = new JButton("Ingresar");
+                    btnConfirmar.setBackground(Color.blue);
                     btnConfirmar.setForeground(Color.white);
-                    btnConfirmar.setFont(new java.awt.Font("Roboto", 1, 12));
+                    btnConfirmar.setFont(new java.awt.Font("Agency FB", 1, 12));
                     panelBtn1.add(btnConfirmar);
                     panel_botones.add(panelBtn1);
-                    //---------Panel2---------------------
-                    panelBtn2.setBackground(Color.white);
-                    btnCancelar = new JButton("Cancelar");
-                    btnCancelar.setBackground(Color.red);
-                    btnCancelar.setForeground(Color.white);
-                    btnCancelar.setFont(new java.awt.Font("Roboto", 1, 12));
-                    panelBtn2.add(btnCancelar);
-                    panel_botones.add(panelBtn2);
+                    
 
                     btnConfirmar.addActionListener(new ActionListener() {
                         @Override
@@ -249,8 +241,9 @@ public class PEntrada extends javax.swing.JPanel {
                         public void actionPerformed(ActionEvent e) {
                             limpiarDataTicket();
                             btn_buscar_placa.setEnabled(true);
-                            panelBtn1.remove(btnConfirmar);
                             panelBtn2.remove(btnCancelar);
+                            panelBtn1.remove(btnConfirmar);
+                            
                         }
                     });
 
@@ -265,16 +258,16 @@ public class PEntrada extends javax.swing.JPanel {
             } else {
                 limpiarDataTicket();
                 btn_buscar_placa.setEnabled(true);
-                panelBtn1.remove(btnConfirmar);
                 panelBtn2.remove(btnCancelar);
+                panelBtn1.remove(btnConfirmar);
                 JOptionPane.showMessageDialog(null, "No se encontró la placa, debe registrar el vehículo");
                 
             }
         } else {
             limpiarDataTicket();
             btn_buscar_placa.setEnabled(true);
-            panelBtn1.remove(btnConfirmar);
             panelBtn2.remove(btnCancelar);
+            panelBtn1.remove(btnConfirmar);            
             etq_titulo_ticket.setForeground(Color.red);
             etq_titulo_ticket.setText("Ingrese una placa valida");
         }

@@ -114,12 +114,11 @@ public class PbuscarVehiculo extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Agency FB", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Vehiculos");
-        jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 3, 0, new java.awt.Color(255, 0, 0)));
 
-        btn_restablecer.setBackground(new java.awt.Color(255, 102, 102));
-        btn_restablecer.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btn_restablecer.setBackground(new java.awt.Color(102, 204, 255));
+        btn_restablecer.setFont(new java.awt.Font("Agency FB", 1, 14)); // NOI18N
         btn_restablecer.setForeground(new java.awt.Color(255, 255, 255));
-        btn_restablecer.setText("X");
+        btn_restablecer.setText("LIMPIAR");
         btn_restablecer.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED)));
         btn_restablecer.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_restablecer.setFocusable(false);
