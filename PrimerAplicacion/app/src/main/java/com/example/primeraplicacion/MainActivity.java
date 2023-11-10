@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void registarPersona(View vista){
+    public void registrarPersona(View vista){
         String id = campo_id.getText().toString();
         String nombre = campo_nombre.getText().toString();
         String email = campo_email.getText().toString();
