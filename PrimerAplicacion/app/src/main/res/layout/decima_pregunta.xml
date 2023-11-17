@@ -12,66 +12,63 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title"
+        android:text="Pregunta #10"
         android:textSize="50sp"
         android:gravity="center"
         android:textStyle="bold"
         android:textColor="@color/black"
-    />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/id"
-        android:textSize="30sp"
-        android:textStyle="bold"
-    />
-
-    <EditText
-        android:id="@+id/campo_id"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:inputType="number"
-    />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/name"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        />
-
-    <EditText
-        android:id="@+id/campo_nombre"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:inputType="text"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/email"
-        android:textSize="30sp"
+        android:text="Descripción:"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         />
 
-    <EditText
-        android:id="@+id/campo_email"
+    <TextView
+        android:id="@+id/pregunta10"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:inputType="textEmailAddress"
+        android:text="El principio Don't Repeat Yourself (DRY) sugiere que el código debe ser repetitivo para mejorar su comprensión."
+        android:textSize="22sp"
+        android:textStyle="normal"
+        android:textColor="@color/black"
         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opciones:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="True"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="False"/>
+
+    </RadioGroup>
 
     <Button
-        android:id="@+id/btn_registrar"
+        android:id="@+id/btn_responder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/register"
+        android:textSize="30sp"
+        android:text="Responder"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:onClick="registrarPersona"
