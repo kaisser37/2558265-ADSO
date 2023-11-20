@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pregunta #3"
+        android:text="Pregunta #2"
         android:textSize="50sp"
         android:gravity="center"
         android:textStyle="bold"
@@ -29,13 +29,19 @@
         />
 
     <TextView
-        android:id="@+id/pregunta3"
+        android:id="@+id/pregunta2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Qué significa el acrónimo API?"
+        android:text="¿Qué lenguaje de programación se utiliza comúnmente para el desarrollo de aplicaciones Android?"
         android:textSize="22sp"
         android:textStyle="normal"
         android:textColor="@color/black"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/pregunta2"
         />
 
     <TextView
@@ -54,14 +60,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="Application Programming Interface"/>
+            android:text="Swift"/>
         <RadioButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:text="Advanced Programming Instruction
-
-"/>
+            android:text="Java"/>
 
     </RadioGroup>
 

@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class SegundaActividad extends AppCompatActivity {
+public class Cuestionario extends AppCompatActivity {
 
     TextView etiqueta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.segunda_pregunta);
+        setContentView(R.layout.pregunta2);
 
         Bundle datos = getIntent().getExtras();
 
